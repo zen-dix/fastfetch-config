@@ -13,8 +13,8 @@ A clean, modern, and minimal config for [fastfetch](https://github.com).
 
 2. Clone the repository and copy the config:
   ```bash
-  git clone https://github.com/yourusername/my-fastfetch-repo.git
-  cd my-fastfetch-repo
+  git clone https://github.com/zen-dix/fastfetch-config
+  cd fastfetch-config
   mkdir -p ~/.config/fastfetch
   cp config.jsonc ~/.config/fastfetch/config.jsonc 
  ```
