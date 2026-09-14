@@ -1,0 +1,109 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "data",
+        "padding": {
+            "top": 4,
+            "right": 2
+        },
+        "color": {
+            "1": "32"
+        },
+        "source": "$1  ▄████████▄\n$1 ▄████▀▀▀▀██▄\n$1 ████▀      ▀\n$1 ████\n$1 ████▄      ▄\n$1 ▀████▄▄▄▄██▀\n$1  ▀████████▀"
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": "╭───────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#31} user    {#keys}│",
+            "type": "title",
+            "format": "{#31}{user-name}"
+        },
+        {
+            "key": "│ {#32}󰇅 hname   {#keys}│",
+            "type": "title",
+            "format": "{#32}{host-name}"
+        },
+        {
+            "type": "command",
+            "key": "│ {#33}󱦟 os age  {#keys}│",
+            "text": "printf \"\\e[33m%s days\\e[0m\" \"$(( ($(date +%s) - $(stat -c %W /)) / 86400 ))\""
+        },
+        {
+            "key": "│ {#34}󰅐 uptime  {#keys}│",
+            "type": "uptime",
+            "format": "{#34}{?days}{days} days {?}{hours} hours, {minutes} mins"
+        },
+        {
+            "key": "│ {#35}󰻀 distro  {#keys}│",
+            "type": "os",
+            "format": "{#35}{name} {arch}"
+        },
+        {
+            "key": "│ {#36} kernel  {#keys}│",
+            "type": "kernel",
+            "format": "{#36}{sysname} {release}"
+        },
+        {
+            "key": "│ {#31}󰖯 wm      {#keys}│",
+            "type": "wm",
+            "format": "{#31}{pretty-name} ({protocol-name})"
+        },
+        {
+            "key": "│ {#32} term    {#keys}│",
+            "type": "terminal",
+            "format": "{#32}{pretty-name}"
+        },
+        {
+            "key": "│ {#33} shell   {#keys}│",
+            "type": "shell",
+            "format": "{#33}{pretty-name}"
+        },
+        {
+            "key": "│ {#34}󰍛 cpu     {#keys}│",
+            "type": "cpu",
+            "showPeCoreCount": true,
+            "format": "{#34}{name} ({cores-logical}) @ {freq-max}"
+        },
+        {
+            "key": "│ {#35}󰢮 gpu     {#keys}│",
+            "type": "gpu",
+            "format": "{#35}{name} [{type}]"
+        },
+        {
+            "key": "│ {#36}󰉉 disk    {#keys}│",
+            "type": "disk",
+            "folders": "/",
+            "percent": {
+                "color": "36"
+            },
+            "format": "{#36}{size-used} / {size-total}"
+        },
+        {
+            "key": "│ {#31}󰍛 memory  {#keys}│",
+            "type": "memory",
+            "percent": {
+                "color": "31"
+            },
+            "format": "{#31}{used} / {total}"
+        },
+        {
+            "key": "├───────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#39} colors  {#keys}│",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "key": "╰───────────╯",
+            "type": "custom"
+        }
+    ]
+}
