@@ -21,6 +21,6 @@ A clean, modern, and minimal config for [fastfetch](https://github.com).
 3. Run Fastfetch to see the result:
   ```bash
   fastfetch
-
+  ```
 ## 📄 License
 MIT
