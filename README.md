@@ -1,6 +1,6 @@
 # My Custom Fastfetch Config
 
-A clean, modern, and minimal config for [fastfetch](https://github.com). 
+A clean, modern, and minimal config for fastfetch 
 
 ## 📸 Preview
 ![Fastfetch Preview](preview.png)
