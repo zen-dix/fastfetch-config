@@ -7,15 +7,19 @@ A clean, modern, and minimal config for [fastfetch](https://github.com).
 
 ## 🚀 Installation
 
-1. Make sure you have `fastfetch` installed on your system.
-2. Backup your current config (if any):
+1. **Backup your current config (optional):**
    ```bash
    mv ~/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc.bak
-   ```
-3. Copy the `config.jsonc` from this repository to your fastfetch directory:
-   ```bash
-   cp config.jsonc ~/.config/fastfetch/config.jsonc
-   ```
 
+2. Clone the repository and copy the config:
+  ```bash
+  git clone https://github.com/yourusername/my-fastfetch-repo.git
+  cd my-fastfetch-repo
+  mkdir -p ~/.config/fastfetch
+  cp config.jsonc ~/.config/fastfetch/config.jsonc 
+
+3. Run Fastfetch to see the result:
+  ```bash
+  fastfetch
 ## 📄 License
 MIT
