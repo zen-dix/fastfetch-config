@@ -17,7 +17,7 @@ A clean, modern, and minimal config for [fastfetch](https://github.com).
   cd my-fastfetch-repo
   mkdir -p ~/.config/fastfetch
   cp config.jsonc ~/.config/fastfetch/config.jsonc 
-
+ ```
 3. Run Fastfetch to see the result:
   ```bash
   fastfetch
